@@ -3,6 +3,7 @@ package org.acme.insurance.retraction;
 import org.acme.insurance.Driver;
 
 rule "RetractDriver"
+salience 0
 
 
 
@@ -12,7 +13,7 @@ rule "RetractDriver"
     
     then
         System.out.println("Retracting Driver " + driver.getDriverName() + " - " + driver.getAge());
-        //retract(driver);
+        retract(driver);
 
 
 
