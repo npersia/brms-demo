@@ -12,7 +12,7 @@ rule "RetractDriver"
     
     then
         System.out.println("Retracting Driver " + driver.getDriverName() + " - " + driver.getAge());
-        retract(driver);
+        //retract(driver);
 
 
 
