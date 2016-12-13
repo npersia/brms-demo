@@ -6,6 +6,7 @@ rule "NewerVehicleSurcharge"
 	dialect "mvel"
 	no-loop true
 	lock-on-active true
+	salience 100
 	when
 		There is a Policy
 		- vehicle year is greater than 2004
