@@ -1,0 +1,21 @@
+package org.acme.insurance.exclusion;
+
+import org.acme.insurance.Driver;
+import org.acme.insurance.Rejection;
+
+import org.acme.insurance.Policy;
+
+
+
+
+rule "TooOldCar"
+	dialect "mvel"
+	ruleflow-group "rejection"
+	when
+		Policy(vehicleYear < 1980 )
+	then
+		Rejection fact0 = new Rejection();
+		fact0.setReason( "Too Old Car" );
+		insert( fact0 );
+		System.out.println("fired rule " + kcontext.getRule().getName());
+end
