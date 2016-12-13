@@ -5,7 +5,6 @@ import org.acme.insurance.Driver
 import org.acme.insurance.Policy
 
 rule "SafeYouths"
-    ruleflow-group "calculation"
     when
         //conditions
         driver : Driver(age >= 18 && < 25, numberOfTickets <= 1, numberOfAccidents < 1 )
