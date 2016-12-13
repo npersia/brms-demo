@@ -5,6 +5,7 @@ import org.acme.insurance.Rejection;
 
 rule "TooYoung"
 	dialect "mvel"
+	salience 100
 	when
 		Driver( age < 18 )
 	then
