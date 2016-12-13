@@ -12,7 +12,7 @@ rule "RetractRejection"
     
     then
         System.out.println("Retracting rejection: " + rejection);
-        retract(rejection);
+        //retract(rejection);
 
 
 
