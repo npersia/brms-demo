@@ -5,6 +5,7 @@ import org.acme.insurance.Driver
 import org.acme.insurance.Policy
 
 rule "SafeYouths"
+salience 100
     when
         //conditions
         driver : Driver(age >= 18 && < 25, numberOfTickets <= 1, numberOfAccidents < 1 )
