@@ -74,47 +74,27 @@
       <name>p2</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>Policy</type>
-      <fieldData>
-        <field-data>
-          <name>vehicleYear</name>
-          <value>0</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>policyType</name>
-          <value>MASTER</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>driver</name>
-          <value>=d1</value>
-          <nature>2</nature>
-        </field-data>
-      </fieldData>
-      <name>pM</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
-      <executionTimeResult>148</executionTimeResult>
-      <numberOfRulesFired>5</numberOfRulesFired>
+      <executionTimeResult>278</executionTimeResult>
+      <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
           <expected>120</expected>
-          <successResult>true</successResult>
-          <explanation>[p1] field [price] was [120].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [price] was [] expected [120].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>priceDiscount</fieldName>
           <expected>50</expected>
-          <successResult>true</successResult>
-          <explanation>[p1] field [priceDiscount] was [50].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [priceDiscount] was [] expected [50].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -127,16 +107,18 @@
         <expect-field>
           <fieldName>price</fieldName>
           <expected>120</expected>
-          <successResult>true</successResult>
-          <explanation>[p2] field [price] was [120].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p2] field [price] was [] expected [120].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>priceDiscount</fieldName>
           <expected>50</expected>
-          <successResult>true</successResult>
-          <explanation>[p2] field [priceDiscount] was [50].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p2] field [priceDiscount] was [] expected [50].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -144,43 +126,29 @@
       <name>p2</name>
       <anonymous>false</anonymous>
     </expect-fact>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>price</fieldName>
-          <expected>240</expected>
-          <successResult>true</successResult>
-          <explanation>[pM] field [price] was [240].</explanation>
-          <operator>==</operator>
-          <nature>1</nature>
-        </expect-field>
-      </fieldValues>
-      <name>pM</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
     <expect-rule>
       <ruleName>Row 4 CreditScoreDiscount</ruleName>
       <expectedCount>2</expectedCount>
-      <explanation>Rule [Row 4 CreditScoreDiscount] activated 2 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>2</actualResult>
+      <explanation>Rule [Row 4 CreditScoreDiscount] activated 0 times. Expected 2 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>SafeAdults</ruleName>
       <expectedCount>2</expectedCount>
-      <explanation>Rule [SafeAdults] activated 2 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>2</actualResult>
+      <explanation>Rule [SafeAdults] activated 0 times. Expected 2 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>PriceMultipleVehicles</ruleName>
-      <explanation>Rule [PriceMultipleVehicles] was activated 1 times.</explanation>
+      <explanation>Rule [PriceMultipleVehicles] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-11-14 04:41:52.607 UTC</lastRunResult>
+  <lastRunResult>2016-12-13 17:53:52.316 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.insurance.policyquote</packageName>
