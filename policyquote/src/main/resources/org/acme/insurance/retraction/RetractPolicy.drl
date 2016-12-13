@@ -4,6 +4,7 @@ import org.acme.insurance.Policy;
 
 
 rule "RetractPolicy"
+salience 0
 
 
 
@@ -13,7 +14,7 @@ rule "RetractPolicy"
     
     then
         System.out.println("Retracting policy: " + policy.getPrice());
-        //retract(policy);
+        retract(policy);
 
 
 
