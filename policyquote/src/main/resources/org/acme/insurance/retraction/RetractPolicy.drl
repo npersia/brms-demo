@@ -4,7 +4,6 @@ import org.acme.insurance.Policy;
 
 
 rule "RetractPolicy"
-    ruleflow-group "retract"
 
 
 
