@@ -3,7 +3,7 @@ package org.acme.insurance.retraction;
 import org.acme.insurance.Rejection;
 
 rule "RetractRejection"
-
+salience 0
 
 
     when
@@ -12,7 +12,7 @@ rule "RetractRejection"
     
     then
         System.out.println("Retracting rejection: " + rejection);
-        //retract(rejection);
+        retract(rejection);
 
 
 
