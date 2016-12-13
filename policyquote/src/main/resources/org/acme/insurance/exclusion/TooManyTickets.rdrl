@@ -5,7 +5,6 @@ import org.acme.insurance.Rejection;
 
 rule "TooManyTickets"
 	dialect "mvel"
-	ruleflow-group "rejection"
 	when
 		Driver( numberOfTickets > 6 )
 	then
