@@ -10,7 +10,6 @@ import org.acme.insurance.Policy;
 
 rule "TooOldCar"
 	dialect "mvel"
-	ruleflow-group "rejection"
 	when
 		Policy(vehicleYear < 1980 )
 	then
