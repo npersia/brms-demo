@@ -9,6 +9,8 @@ import org.acme.insurance.Policy;
 
 
 rule "TooOldCar"
+salience 100
+
 	dialect "mvel"
 	when
 		Policy(vehicleYear < 1980 )
