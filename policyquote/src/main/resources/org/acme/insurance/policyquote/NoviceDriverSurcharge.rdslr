@@ -6,6 +6,7 @@ rule "NoviceDriverSurcharge"
 	dialect "mvel"
 	no-loop true
 	lock-on-active true
+	salience 100
 	when
 		There is a Driver
 		- age less than 20 years old
