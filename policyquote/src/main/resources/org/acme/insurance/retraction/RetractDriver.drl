@@ -13,7 +13,7 @@ salience 100000
     
     then
         System.out.println("Retracting Driver " + driver.getDriverName() + " - " + driver.getAge());
-        retract(driver);
+        //retract(driver);
 
 
 
