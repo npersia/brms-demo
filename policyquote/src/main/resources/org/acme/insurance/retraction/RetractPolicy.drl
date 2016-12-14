@@ -4,8 +4,7 @@ import org.acme.insurance.Policy;
 
 
 rule "RetractPolicy"
-salience 0
-
+salience 100000
 
 
     when
