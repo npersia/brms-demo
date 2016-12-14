@@ -3,7 +3,7 @@ package org.acme.insurance.retraction;
 import org.acme.insurance.Rejection;
 
 rule "RetractRejection"
-salience 0
+salience 100000
 
 
     when
