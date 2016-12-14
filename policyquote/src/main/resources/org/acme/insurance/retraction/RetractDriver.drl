@@ -3,7 +3,7 @@ package org.acme.insurance.retraction;
 import org.acme.insurance.Driver;
 
 rule "RetractDriver"
-salience 0
+salience 100000
 
 
 
